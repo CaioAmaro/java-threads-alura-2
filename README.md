@@ -1,7 +1,27 @@
 
 # 📌 Projeto: Concorrência, Threads e Performance com Spring Boot e Java
 
-Este repositório contém exemplos e práticas relacionadas a **concorrência**, **controle de threads** e **melhoria de desempenho** em aplicações Java e Spring Boot.
+## 🎓 O que eu aprendi
+
+Durante o desenvolvimento deste projeto, eu aprendi os seguintes conceitos e práticas importantes para o desenvolvimento Java e Spring Boot:
+
+- Como criar e gerenciar **threads** em Java puro.
+- A importância de **sincronizar recursos compartilhados** para evitar condições de corrida.
+- Como realizar **testes de carga** simulando múltiplas requisições com o Postman.
+- As limitações do uso de `synchronized` dentro de aplicações Spring Boot.
+- Como implementar **locks a nível de banco de dados**, utilizando tanto o **lock pessimista** quanto o **lock otimista** com a anotação `@Version`.
+- Como utilizar o **@Async** no Spring Boot para criar métodos assíncronos.
+- A configuração de um **Thread Pool Executor** personalizado no Spring para controlar melhor o número de threads.
+- Como realizar **agendamentos de tarefas** utilizando a anotação `@Scheduled`, incluindo o uso de expressões cron.
+- Os conceitos de **arquitetura não bloqueante** para melhorar a experiência do usuário.
+- O uso do **CompletableFuture** para realizar tarefas assíncronas com retorno de resultado.
+- Como trabalhar com o **ExecutorService** para criar e gerenciar várias threads de forma eficiente.
+- Os impactos da criação de muitas threads no sistema, através de **testes de stress**.
+- Como utilizar o **try-with-resources** para uma gestão mais segura e limpa de recursos como executores.
+- A configuração e os benefícios das **threads virtuais (Project Loom)** no Spring Boot.
+- Como configurar o **envio de e-mails reais usando Gmail SMTP** dentro de uma aplicação Spring.
+
+Este projeto reforçou a minha compreensão sobre **concorrência**, **performance**, **assincronismo** e **resiliência de aplicações backend**.
 
 ## 🧵 Principais Conceitos Abordados
 
