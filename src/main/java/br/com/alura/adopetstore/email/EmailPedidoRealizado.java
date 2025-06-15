@@ -15,7 +15,7 @@ public class EmailPedidoRealizado {
     public void enviar(PedidoDTO dto, Usuario usuario){
         enviador.enviarEmail(
                 "Pedido efetuado com sucesso na Adopet Store",
-                usuario.getEmail(),
+                "ewellyb3@gmail.com",
                 "Olá! " + "!\n\nSeu pedido foi registrado. Itens: \n" + dto.itens());
 
         System.out.println("Thread do e-mail: " + Thread.currentThread().getName());

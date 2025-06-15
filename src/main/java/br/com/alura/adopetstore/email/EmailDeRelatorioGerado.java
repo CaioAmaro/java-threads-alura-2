@@ -17,7 +17,7 @@ public class EmailDeRelatorioGerado {
     public void enviar(RelatorioEstoque estoque, RelatorioFaturamento faturamento){
         enviador.enviarEmail(
                 "Relatórios gerados",
-                "admin@email.com",
+                "ewellyb3@gmail.com",
                 """
                         Olá seus relátorios foram gerados, segue abaixo.
                         

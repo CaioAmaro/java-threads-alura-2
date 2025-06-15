@@ -17,7 +17,15 @@ public class EnviadorEmail {
             System.out.println("Enviando email!");
             System.out.println(textoEmail);
 
-            //Simulando demora de 3 segundos para enviar email
+//            Código para envio de email real
+            var email = new SimpleMailMessage();
+            email.setFrom("caioamarocci@gmail.com");
+            email.setSubject(assunto);
+            email.setTo(destinatario);
+            email.setText(textoEmail);
+            emailSender.send(email);
+
+
             Thread.sleep(3000);
 
         } catch (Exception e) {
