@@ -4,6 +4,7 @@ import br.com.alura.adopetstore.dto.EstatisticasVenda;
 import br.com.alura.adopetstore.model.Pedido;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
@@ -18,7 +19,8 @@ public interface PedidoRepository extends JpaRepository<Pedido, Long> {
             JOIN p.itens i
             WHERE p.data = :data
             """)
-    BigDecimal faturamentoTotalDoDia(LocalDate data);
+
+    BigDecimal faturamentoTotalDoDia(@Param("data") LocalDate data);
     @Query("""
         SELECT NEW br.com.alura.adopetstore.dto.EstatisticasVenda(
             prod.categoria,
@@ -31,6 +33,6 @@ public interface PedidoRepository extends JpaRepository<Pedido, Long> {
         WHERE p.data = :data
         GROUP BY prod.categoria
         """)
-    List<EstatisticasVenda> faturamentoTotalDoDiaPorCategoria(LocalDate data);
+    List<EstatisticasVenda> faturamentoTotalDoDiaPorCategoria(@Param("data") LocalDate data);
 
 }

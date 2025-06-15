@@ -14,13 +14,6 @@ public class EnviadorEmail {
 
     public void enviarEmail(String assunto, String destinatario, String textoEmail) {
         try {
-//            Código para envio de email real
-//            var email = new SimpleMailMessage();
-//            email.setFrom("adopet@email.com.br");
-//            email.setSubject(assunto);
-//            email.setTo(destinatario);
-//            email.setText(textoEmail);
-//            emailSender.send(email);
             System.out.println("Enviando email!");
             System.out.println(textoEmail);
 
